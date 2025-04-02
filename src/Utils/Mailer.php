@@ -38,6 +38,7 @@ class Mailer
             $this->mailer->isHTML($isHtml);
             $this->mailer->Subject = $subject;
             $this->mailer->Body = $body;
+            $this->mailer->CharSet = 'UTF-8';
             
             return $this->mailer->send();
         } catch (Exception $e) {
