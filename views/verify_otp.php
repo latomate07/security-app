@@ -31,7 +31,7 @@ $user = $userModel->findById($userId);
         <h1 class="text-2xl font-bold text-center text-blue-600 mb-6">Vérifier l'OTP</h1>
         
         <p class="text-gray-600 mb-6 text-center">
-            Veuillez saisir le code à 6 chiffres envoyé à votre adresse électronique: <strong><?= htmlspecialchars($user['email']) ?></strong>
+            Veuillez saisir le code à 6 chiffres envoyé à votre e-mail: <strong><?= htmlspecialchars($user['email']) ?></strong>
         </p>
         
         <?php if (isset($error)): ?>
